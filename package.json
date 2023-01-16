@@ -1,0 +1,55 @@
+{
+    "name": "simple-calculator",
+    "private": true,
+    "version": "0.0.0",
+    "author": "Leonid Tupikin",
+    "homepage": "https://github.com/MarkGrushevski/simple-calculator",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MarkGrushevski/simple-calculator.git"
+    },
+    "bugs": {
+        "url": "https://github.com/MarkGrushevski/simple-calculator/issues"
+    },
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "prepare": "husky install",
+        "lint:eslint": "npx eslint \"src/**/*.jsx\""
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx}": [
+            "eslint --fix"
+        ],
+        "src/**/*.scss": [
+            "stylelint --fix"
+        ],
+        "src/**/*.{js,jsx,json,html,md,scss}": [
+            "prettier --write"
+        ]
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.26",
+        "@types/react-dom": "^18.0.10",
+        "@vitejs/plugin-react-swc": "^3.0.1",
+        "autoprefixer": "^10.4.13",
+        "eslint": "^8.32.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-react": "^7.32.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.1.0",
+        "prettier": "^2.8.3",
+        "sass": "^1.57.1",
+        "stylelint": "^14.16.1",
+        "stylelint-config-prettier-scss": "^0.0.1",
+        "stylelint-config-standard-scss": "^6.1.0",
+        "vite": "^4.0.4"
+    }
+}

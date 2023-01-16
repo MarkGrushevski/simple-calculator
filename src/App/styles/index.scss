@@ -1,0 +1,15 @@
+@use "reset";
+@use "variables";
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-normal);
+    font-family: var(--ff-base);
+    background-color: var(--bg-main);
+    color: var(--text-color);
+}
